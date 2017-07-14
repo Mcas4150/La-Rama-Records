@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .banner h1 {
   font-size: 50px;
@@ -48,6 +49,9 @@
   bottom: 10px;
   left: 10px;
 }
+.card-contents{
+  text-align: left;
+}
 .card-description h2 {
   font-size: 24px;
 }
@@ -66,4 +70,8 @@
 }
 .card-link:hover {
   opacity: 0.1;
+}
+.two_columns{
+  display:flex;
+  justify-content: space-between;
 }

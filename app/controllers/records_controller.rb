@@ -6,6 +6,13 @@ class RecordsController < ApplicationController
   end
 
   def show
+    @record = Record.find(params[:id])
+    @records = Record.where(latitude: @record.latitude, longitude: @record.longitude)
+    @hash = Gmaps4rails.build_markers(@records) do |flat, marker|
+      marker.lat flat.latitude
+      marker.lng flat.longitude
+      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+    end
 
   end
 
@@ -24,6 +31,7 @@ class RecordsController < ApplicationController
   end
 
   def edit
+    @record.save
   end
 
   def update
@@ -43,7 +51,7 @@ class RecordsController < ApplicationController
   private
 
   def record_params
-    params.require(:record).permit(:name, :artist, :price, :photo, :user_id, :description)
+    params.require(:record).permit(:name, :artist, :price, :photo, :user_id, :description, :address)
   end
 
   def set_record
