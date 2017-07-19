@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+
   before_action :set_record, only: [:new, :show, :create]
   # before_action :set_user, only: [:new, :show]
 
@@ -18,6 +19,7 @@ class OrdersController < ApplicationController
 
     if @order.save
       redirect_to orders_path
+
     else
       render "records/show"
     end
@@ -28,7 +30,11 @@ class OrdersController < ApplicationController
     @orders = Order.all
   end
 
-  def show
+  def delete
+    @order = Order.find(params[:id])
+    @order.destroy
+    redirect_to Record_path(@record)
+
   end
 
   def destroy
@@ -53,3 +59,6 @@ class OrdersController < ApplicationController
 
 
 end
+
+
+

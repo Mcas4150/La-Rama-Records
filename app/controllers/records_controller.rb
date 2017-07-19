@@ -23,6 +23,7 @@ class RecordsController < ApplicationController
 
   def create
     @record = Record.new(record_params)
+
     @record.user = current_user
     if @record.save
       redirect_to record_path(@record)
@@ -30,6 +31,8 @@ class RecordsController < ApplicationController
     #   render :new
     end
   end
+
+
 
   def edit
     @record.save
