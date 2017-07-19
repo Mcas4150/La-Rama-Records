@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  resources :orders
-  resources :records
+  mount Attachinary::Engine => "/attachinary"
+
+  resources :records do
+    resources :orders, only: [:new, :create]
+  end
+
+  resources :orders, only: [:show, :index, :destroy]
+
+  devise_for :users,
+  controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
 
   namespace :admin do |variable|
     resources :orders, only: [:index]
     resources :records, only: [:index]
   end
+
+
 
   # get 'orders/crete'
 
@@ -28,7 +38,6 @@ Rails.application.routes.draw do
 
   # get 'records/update'
 
-  devise_for :users
-  root to: 'pages#home'
+  root to: 'records#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

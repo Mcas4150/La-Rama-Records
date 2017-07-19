@@ -1,2 +1,14 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+<div class="form-wrapper">
+<%= simple_form_for [@record, @order] do |f| %>
+  <%# f.hidden_field :record_id, value: @record.id %>
+  <%= cl_image_tag @record.photo.path, height: 150, width: 150, crop: :fill %>
+  <h2><%= @record.name %></h2>
+  <p>by: <%= @record.artist %></p>
+  <p>$<%= @record.price %></p>
+  <%= f.text_field :from, order: [:day, :month, :year],class: "datepicker", :placeholder => 'Rental date' %>
+  <%= f.text_field :to, order: [:day, :month, :year],class: "datepicker", :placeholder => 'Return date' %>
+  <%= f.submit "Confirm Order", class: "btn btn-cool" %>
+  <%= link_to 'Back', records_path %>
+<% end %>
+</div>
+<%#current_user.email %>

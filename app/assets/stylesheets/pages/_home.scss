@@ -11,6 +11,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+
+
+
 }
 .banner h1 {
   font-size: 50px;
@@ -25,11 +30,11 @@
 }
 
 .card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
   background-size: cover !important;
-  color: white;
+  color: black;
   position: relative;
+  margin: 20px;
 }
 .card-user {
   position: absolute;
@@ -47,6 +52,9 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
+}
+.card-contents{
+  text-align: left;
 }
 .card-description h2 {
   font-size: 24px;
@@ -67,41 +75,11 @@
 .card-link:hover {
   opacity: 0.1;
 }
-
-.footer-basic-centered{
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: center;
-  font: normal 18px sans-serif;
-
-  padding: 45px;
-  margin-top: 80px;
+.two_columns{
+  display:flex;
+  justify-content: space-between;
 }
 
-.footer-basic-centered .footer-company-motto{
-  color:  #8d9093;
-  font-size: 24px;
-  margin: 0;
-}
-
-.footer-basic-centered .footer-company-name{
-  color:  #8f9296;
-  font-size: 14px;
-  margin: 0;
-}
-
-.footer-basic-centered .footer-links{
-  list-style: none;
-  font-weight: bold;
-  color:  #ffffff;
-  padding: 35px 0 23px;
-  margin: 0;
-}
-
-.footer-basic-centered .footer-links a{
-  display:inline-block;
-  text-decoration: none;
-  color: inherit;
+.form-wrapper{
+  padding: 100px 0 0 100px;
 }
