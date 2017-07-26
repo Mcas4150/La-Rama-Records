@@ -1,9 +1,30 @@
 Rails.application.routes.draw do
 
 
-  get 'tests/:id' => 'tests#show', :constraints  => {:id => /.+\.\w{3,4}/}
+  get 'devise/registrations'
 
-  resources :tests do
+  get 'devise/new'
+
+  get 'devise/create'
+
+  get 'devise/update'
+
+
+  get 'registrations/new'
+
+  get 'registrations/create'
+
+  get 'registrations/update'
+
+  get 'registrationscontroller/new'
+
+  get 'registrationscontroller/create'
+
+  get 'registrationscontroller/update'
+
+  get 'records/:id' => 'records#show', :constraints  => {:id => /.+\.\w{3,4}/}
+
+  resources :records do
     collection do
       get :authenticate
       get :callback
@@ -17,7 +38,6 @@ Rails.application.routes.draw do
 
   resources :records do
     resources :orders, only: [:new, :create]
-    resources :tests, only: [:authenticate, :callback]
   end
 
 
@@ -27,6 +47,7 @@ end
 
   devise_for :users,
   controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+
 
 
   namespace :admin do |variable|
