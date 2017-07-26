@@ -1,26 +1,7 @@
 Rails.application.routes.draw do
 
 
-  get 'devise/registrations'
 
-  get 'devise/new'
-
-  get 'devise/create'
-
-  get 'devise/update'
-
-
-  get 'registrations/new'
-
-  get 'registrations/create'
-
-  get 'registrations/update'
-
-  get 'registrationscontroller/new'
-
-  get 'registrationscontroller/create'
-
-  get 'registrationscontroller/update'
 
   get 'records/:id' => 'records#show', :constraints  => {:id => /.+\.\w{3,4}/}
 
