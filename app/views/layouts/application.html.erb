@@ -20,8 +20,11 @@
 $(document).ready(function() {
 
      $('.filter > a').on('click', () => {
-    $('.filter-drop').toggle();
+    $('.filter-drop').toggle(200);
   });
+
+
+
 
     var hitTemplate =
     '<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 disc">' +
@@ -45,14 +48,14 @@ $(document).ready(function() {
     var search = instantsearch({
       appId: 'P1B024U2Z9',
       apiKey: 'e2a4822bc15df22e7b8ca22cca51b784',
-      indexName: 'Record_development',
+      indexName: 'Record_production',
       urlSync: true
     });
 
     search.addWidget(
       instantsearch.widgets.searchBox({
         container: '#q',
-        placeholder: 'Type Anything',
+        placeholder: 'Inquiries',
         autofocus: false,
         poweredBy: false
       })
@@ -105,7 +108,7 @@ search.addWidget(
       instantsearch.widgets.refinementList({
         container: '#genre',
         attributeName: 'genre',
-        limit: 12,
+        limit: 15,
         cssClasses: {
           root: 'list-group',
           item: 'list-group-item',
@@ -129,6 +132,17 @@ search.addWidget(
 
 
 <script>
+
+        $.ajax({
+          url: "https://api.darksky.net/forecast/2ccd047ee33ec4a9e6405c8ea777c2f5/45.5581968,-73.8516462",
+          jsonp: "callback",
+          dataType: "jsonp",
+          success: function(data) {
+          //console.log( data.minutely.summary); // server response
+          $('#temparature_montreal').html("Montréal: " + data.currently.summary + " " + data.currently.temperature.toFixed() + "°");
+              }
+          });
+
 
 </script>
 

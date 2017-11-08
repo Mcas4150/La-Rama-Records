@@ -30,13 +30,13 @@
             </tr>
           <% end %>
         </table>
-        <div class="row" style="width:100%">
+        <div class="row centers">
           <div class="col-xs-6 money"> <%= humanized_money_with_symbol(@record.price_cents) rescue nil %>
           </div>
           <div class="col-xs-6">
             <%= form_tag crate_records_path do %>
               <%= hidden_field_tag 'record_id', @record.id rescue nil%>
-              <% @record.cart %>
+              <%= hidden_field_tag 'cart', true %>
               <%= submit_tag 'Add to Cart', class: 'btn btn-cool' %>
             <% end %>
           </div>

@@ -104,8 +104,32 @@ padding-right: 10px;
   margin-bottom:0px;
 }
 
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
 
+.centers{
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+ .filterrow{
+display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+.leftpad{
+  padding-left:0px;
+}
 // TABLES
 
 .tracktable{
@@ -130,7 +154,7 @@ tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-   font-size:1.2em;
+   font-size:1em;
 }
 
 table {
@@ -140,7 +164,7 @@ table {
   th, td {
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333;
-  padding: 20px;
+  padding: 0px;
   }
   tr:nth-child(even) {
     background-color: #77777;
@@ -148,7 +172,8 @@ table {
 }
 
 table td {
-  padding:10px;
+  padding:0px;
+  padding-right: 10px;
 }
 
 td {
@@ -184,6 +209,10 @@ a:active {
 a:hover {
   color: #388697;
   text-decoration: none;
+}
+
+.dark{
+  color:#626262;
 }
 
 .type {
@@ -266,9 +295,20 @@ a:hover {
 // LINKS
 
 .filter {
-
+  font-size: .8em;
+  display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+  align-items: center;
   cursor: pointer;
+  a,  #temparature_montreal {
+    border: solid 1px #d4d8e3!important;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
+  }
 }
+
 
 
 
@@ -313,8 +353,12 @@ a:hover {
 
 .filter-drop {
   display: none;
+  padding: 0px;
 }
 
+.search-drop {
+  display:none;
+}
 
 
 // ALGOLIA
@@ -369,8 +413,66 @@ a:hover {
     justify-content: flex-end;
 }
 
+.list-group-item {
+    position: relative;
+    display: inline-block;
+    // margin-left: 10px;
+    // margin-right: 10px;
+
+    margin-bottom: 0px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    width: 18%;
+}
+
+.badge {
+    position: relative;
+   top: 0px;
+    right: 0px;
+    font-size: .8em;
+    color: #ffea36;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* height: 18px; */
+    /* width: 18px; */
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    /* border-radius: 50%; */
+}
 
 
+.form-control:focus {
+    border-color: #ffea36;
+    color: #e9eae7;
+}
+
+.form-control {
+    display: block;
+    width: 80%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: white;
+    background-color: #333333;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
 
 // INSTANTSEARCH??
 
@@ -610,6 +712,7 @@ a:hover {
 #pager {   display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 0px;
   }
 
  #map {
@@ -630,6 +733,12 @@ a:hover {
 img {
 
   border-radius: 2px;
+}
+
+
+.bigimg {
+  height: 25vh;
+  width: 100%;
 }
 
 .myImg {
@@ -784,6 +893,10 @@ img {
       width: 150px;
       height: 150px;
     }
+
+    .zoomrecord{
+      padding: 0px;
+    }
 }
 
 
@@ -842,10 +955,8 @@ width: 100%;
 height:35vh;
 }
 .video {
-    padding-top:15px;
     position: relative;
-    width: 100%;
-    height: 25vh;
+    height: 35vh;
 }
 
 .video__iframe {
@@ -853,22 +964,23 @@ height:35vh;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 35vh;
 }
 
 .video__placeholder {
   width: 100%;
     position: absolute;
+    height: 35vh;
 }
 
 .video__youtube {
     padding-bottom: 100%;
     width: 100%;
-    height: 0;
+    height: 35vh;
     overflow: hidden;
   position: relative;
     object-fit: cover;
-    background-color: black;
+
 }
 
 .video__button {
@@ -893,13 +1005,13 @@ height:35vh;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-dark.png) no-repeat center center;
-    background-size: 10%;
+    background: url(http://clipart-library.com/images/6cr5B6ALi.png) no-repeat center center;
+    background-size: 75%;
 }
 
 .video__button:hover:before {
-    background: url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) no-repeat center center;
-    background-size: 10%;
+    background: url(http://clipart-library.com/images/6cr5B6ALi.png) no-repeat center center;
+    background-size: 75%;
 }
 
     /*! instantsearch.js 2.2.1 | © Algolia Inc. and other contributors; Licensed MIT | github.com/algolia/instantsearch.js */
