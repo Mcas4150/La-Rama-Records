@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "instantsearch.js": "^2.2.1",
-    "lazyframe": "^1.1.3"
-  }
-}
