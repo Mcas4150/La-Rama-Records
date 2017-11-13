@@ -54,16 +54,13 @@
 <script>
 
 
+
+
     (function (window) {
-
     'use strict';
-
     window.code = window.code || {};
-
     window.code.lightweightYoutubePlayer = function () {
-
         var dataYoutubeVideos = '[data-youtube]';
-
         var youtubeVideos = [...document.querySelectorAll(dataYoutubeVideos)];
 
         function init() {
@@ -74,14 +71,11 @@
 
         function bindYoutubeVideoEvent(element) {
             var button = element.querySelector('[data-youtube-button]');
-
             button.addEventListener('click', createIframe);
         }
-
         function createIframe(event) {
             var url = event.target.dataset.youtubeButton;
             var youtubePlaceholder = event.target.parentNode;
-
             var htmlString = '<div class="video__youtube"> <iframe class="video__iframe" src="' + url + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
 
             youtubePlaceholder.style.display = 'none';
@@ -95,9 +89,7 @@
     };
 
 })(window)
-
 ready();
-
 function ready() {
     var lightweightYoutubePlayer = new code.lightweightYoutubePlayer()
 
@@ -107,5 +99,7 @@ function ready() {
         document.addEventListener('DOMContentLoaded', lightweightYoutubePlayer.init);
     }
 }
+
+=======
 
 </script>
