@@ -48,7 +48,7 @@ $(document).ready(function() {
     var search = instantsearch({
       appId: 'P1B024U2Z9',
       apiKey: 'e2a4822bc15df22e7b8ca22cca51b784',
-      indexName: 'Record_development',
+      indexName: 'Record_production',
       urlSync: true
     });
 
@@ -133,7 +133,8 @@ search.addWidget(
 
 <script>
 
-          $.ajax({
+
+        $.ajax({
           url: "https://api.darksky.net/forecast/2ccd047ee33ec4a9e6405c8ea777c2f5/45.5581968,-73.8516462",
           jsonp: "callback",
           dataType: "jsonp",
