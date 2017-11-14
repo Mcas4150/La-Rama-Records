@@ -764,6 +764,35 @@ img {
 
 
 
+@media screen and (max-width: 778px) {
+    .modal-content {
+        width: 100%;
+    }
+    .main{
+          margin-top: 5em;
+          padding-left: 5vw;
+          padding-right: 5vw;
+    }
+    .categories {
+      width: 100%;
+      height: 30vh;
+    }
+    .seletak {
+      width: 150px;
+      height: 150px;
+    }
+
+    .zoomrecord{
+      padding: 0px;
+    }
+
+
+    .list-group-item {
+    width: 50%;
+    padding: 5px 0px;
+  }
+}
+
 
 
 
