@@ -1,0 +1,66 @@
+// ALGOLIA
+
+.ais-hits {
+  width:100%;
+}
+
+.ais-current-refined-values--link, .ais-hierarchical-menu--link, .ais-menu--link, .ais-price-ranges--link, .ais-refinement-list--label, .ais-star-rating--link, .ais-toggle--label {
+    color: #626262;
+    text-decoration: none;
+}
+
+.ais-refinement-list--label:hover{
+  color: #ccc;
+
+}
+
+.ais-pagination--item__active {
+    background: #626262;
+    color: #ffee36
+}
+
+.descr{
+  height: 8vh;
+}
+
+
+
+.ais-refinement-list--label{
+  font-size:1.2em;
+}
+
+
+
+.ais-range-slider--handle {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+    background: #ffea36;
+    border: 5px solid #626262;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ais-range-slider .rheostat-progress {
+    background-color: #ffee36!important;
+}
+
+
+
+.searchbar{
+    position: fixed;
+    left: 0px;
+    padding: 30px;
+    top: 5vh;
+    z-index: 1;
+    width: 100%;
+    height: 5vh;
+}
+
+.ais-search-box {
+  display: none;
+  position: relative;
+ max-width: 100%;
+ width: 100%;
+ }

@@ -1,8 +1,8 @@
 /*! instantsearch.js preview-2.2.1 | © Algolia Inc. and other contributors; Licensed MIT | github.com/algolia/instantsearch.js */
 .ais-search-box {
   position: relative;
-  max-width: 300px;
-  width: 100%; }
+
+ max-width: 100%;
   .ais-search-box--input {
     /* search input */
     padding-left: 24px;
