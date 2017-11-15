@@ -20,7 +20,7 @@
         <p>Year: <%= @record.year rescue nil%></p>
       </div>
 
-      <div class="card-contents col-xs-12 col-sm-3 col-lg-4 tracks">
+      <div class="card-contents col-xs-12 col-sm-4 tracks">
         <div class="centering">
           <table class="tracktable">
             <% reality = @discogs.get_release(@record.release_id) rescue nil%>
