@@ -321,3 +321,22 @@
     }
     .ais-star-rating--star:before{content:'\2605';color:#fbae00}.ais-star-rating--star__empty:before{content:'\2606';color:#fbae00}.ais-star-rating--link__disabled .ais-star-rating--star:before,.ais-star-rating--link__disabled .ais-star-rating--star__empty:before{color:#c9c9c9}.ais-root__collapsible .ais-header{cursor:pointer}.ais-root__collapsed .ais-body,.ais-root__collapsed .ais-footer{display:none}
 /*# sourceMappingURL=instantsearch.min.css.map */
+
+
+.ais-refinement-list--label input[type=checkbox], .ais-refinement-list--label input[type=radio], .ais-toggle--label input[type=checkbox], .ais-toggle--label input[type=radio] {
+    margin-right: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+
+
+.ais-refinement-list--label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
