@@ -265,18 +265,7 @@ a:hover {
 
 
 
-.list-group-item {
-    position: relative;
-    display: inline-block;
-    // margin-left: 10px;
-    // margin-right: 10px;
 
-    margin-bottom: 0px;
-    padding: 5px 10px;
-    background-color: #fff;
-    border: none;
-    width: 18%;
-}
 
 .badge {
     position: relative;
@@ -593,7 +582,11 @@ img {
   height:300px;
 }
 
-
+@media (min-width: 992px){
+.container {
+    width: auto;
+}
+}
 
 @media screen and (max-width: 778px) {
     .modal-content {
@@ -662,6 +655,14 @@ img {
 
     .description > p {
   font-size: 1em;
+}
+
+  .tracks{
+    border-left: none;
+  }
+
+  #prices{
+  padding: 0px 10px;
 }
 
 }

@@ -40,8 +40,8 @@ display: flex;
 
 .filter-drop {
   display: none;
-  padding: 0px;
-  padding-top: 5px;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 
 #temparature_montreal {
@@ -52,6 +52,16 @@ display: flex;
   padding: 7px 16px 7px 16px;
   box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
   }
+
+
+#prices{
+  padding: 0px 15px;
+}
+
+
+#hits-per-page-selector {
+    padding-right: 0px;
+}
 
 .pager {
     display: flex;
@@ -128,3 +138,6 @@ display: flex;
  -webkit-animation: scroll-left 10s linear infinite;
  animation: scroll-left 10s linear infinite;
 }
+
+
+
