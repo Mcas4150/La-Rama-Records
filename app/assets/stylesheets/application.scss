@@ -587,12 +587,14 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size:30px;
+      max-height: 70px;
 }
 
 
 .disc{
   padding-left: 5px;
-  padding-right: 5px
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 
