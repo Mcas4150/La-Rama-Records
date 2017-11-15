@@ -214,6 +214,11 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-wagon-dropdown-menu li > a {
+  color: #e9eae7 !important;
+}
+
+
 .dark{
   color:#626262;
 }
@@ -338,7 +343,7 @@ a:hover {
 }
 
 .dropdown2 {
-  background-color: #353c34;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -408,29 +413,7 @@ a:hover {
 }
 
 
-.form-control:focus {
-    border-color: #ffea36;
-    color: #e9eae7;
-}
 
-.form-control {
-    display: block;
-    width: 80%;
-    height: 36px;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 1.4;
-    color: white;
-    background-color: #333333;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-}
 
 // INSTANTSEARCH??
 
