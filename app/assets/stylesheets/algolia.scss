@@ -340,3 +340,16 @@ input[type="radio"], input[type="checkbox"] {
     flex-direction: row;
     align-items: center;
 }
+
+.ais-pagination--item {
+    display: inline-block;
+    padding: 2px;
+}
+
+
+.ais-pagination--item {
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    width: 24px;
+}

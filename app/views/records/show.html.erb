@@ -21,15 +21,17 @@
       </div>
 
       <div class="card-contents col-xs-12 col-sm-3 col-lg-4 tracks">
-        <table class="tracktable">
-          <% reality = @discogs.get_release(@record.release_id) rescue nil%>
-          <% reality["tracklist"].each do |track|%>
-            <tr>
-              <td><%= track["position"] rescue nil %></td>
-              <td><%= track["title"] rescue nil %></td>
-            </tr>
-          <% end %>
-        </table>
+        <div class="centering">
+          <table class="tracktable">
+            <% reality = @discogs.get_release(@record.release_id) rescue nil%>
+            <% reality["tracklist"].each do |track|%>
+              <tr>
+                <td><%= track["position"] rescue nil %></td>
+                <td><%= track["title"] rescue nil %></td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
         <div class="row centers">
           <div class="col-xs-6 money"> <%= humanized_money_with_symbol(@record.price_cents) rescue nil %>
           </div>

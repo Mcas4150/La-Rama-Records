@@ -18,36 +18,30 @@
 
   </div>
 
+  <div class="rightside">
+    <div class="navbar-wagon-right">
 
-  <div class="navbar-wagon-right">
 
+    <div class="navbar-wagon-item navbar-wagon-link">
+          <div class="badge-container">
+            <i class="fa topbadge fa-search"></i>
+            <i class="fa topbadge fa-shopping-cart hidden-xs"></i>
+            <div class="badge badge-blue"></div>
+          </div>
+    </div>
+      <% if user_signed_in? %>
 
-  <div class="navbar-wagon-item navbar-wagon-link">
-        <div class="badge-container">
-          <i class="fa topbadge fa-search"></i>
-          <i class="fa topbadge fa-shopping-cart hidden-xs"></i>
-          <div class="badge badge-blue"></div>
-        </div>
-  </div>
+        <!-- Profile picture and dropdown -->
 
-    <!-- Search form -->
-
-    <% if user_signed_in? %>
-
-      <!-- Profile picture and dropdown -->
-
-      <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <% end %>
-
-    <!-- Button (call-to-action) -->
-   <!--  -->
-
+        <!-- Login text link -->
+        <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <% end %>
+    </div>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg" style="padding:0px">
+  <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg hamburger" style="padding:0px;
+  padding-right:10px;">
     <div class="dropdown2">
        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu barr" style="text-align: Center; background-color: #292c2f; color: #e9eae7">
