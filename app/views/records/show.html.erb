@@ -1,6 +1,6 @@
 <div class="main">
   <div class="container cut">
-    <div class="row">
+    <div class="row showpanel">
       <div class="card col-xs-12 col-sm-4 zoomrecord">
         <div class="video">
           <div class="video__youtube" data-youtube>
@@ -11,7 +11,7 @@
       </div>
 
       <div class="card-contents col-xs-12 col-sm-4 description">
-        <h1 style="padding-top: 5px;"><%= @record.name rescue nil%></h1>
+        <h1><%= @record.name rescue nil%></h1>
         <p>Artist: <%= @record.artist rescue nil%></p>
         <p>Label: <%= @record.label rescue nil%></p>
         <p>Catno: <%= @record.catno rescue nil%></p>

@@ -13,6 +13,7 @@
 @import "layout/index";
 @import "components/index";
 @import "pages/index";
+@import "pages/show";
 @import "bootstrap-datepicker";
 @import "youtube";
 @import "algolia";
@@ -41,7 +42,7 @@
 
 body {
 
-  background-color: white;
+  background-color: #F0F0F0;
 }
 
 #main-wrapper {
@@ -81,38 +82,16 @@ padding-right: 10px;
   margin-bottom: 1em;
 }
 
-.description {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.description > p {
-  font-size: 1.2em;
-}
-
-.tracks{
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
 
-}
 
 .listings{
   padding:0px;
 }
 
-.zoomrecord{
-  padding-left:0px;
-  margin-left:0px;
-  margin-right:0px;
-  margin-top:5px;
-  margin-bottom:0px;
-}
+
+
+
 
 .centered{
   display: flex;
@@ -122,19 +101,6 @@ padding-right: 10px;
 }
 
 
-.centers{
-      margin-top: 10px;
-      display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.centering{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-}
 
 
  .filterrow{
@@ -151,15 +117,7 @@ display: flex;
 }
 // TABLES
 
-.tracktable{
-  margin-top:21px;
-  width: 100%;
-  word-wrap:break-word;
-  table-layout: fixed;
-  display: block;
-  overflow-y: scroll;
-  overflow:auto;
-}
+
 
 
 tbody{
@@ -234,14 +192,7 @@ a:hover {
 }
 
 
-.add{
-  padding-left: 5px;
-  padding-right:0px;
-}
 
-.add > form{
-  float:right;
-}
 
 .dark{
   color:#626262;
@@ -251,12 +202,7 @@ a:hover {
   font-size: 1.2em;
 }
 
-.money{
 
-  font-size:1.8em;
-  padding-left:0px;
-  padding-right:0px;
-}
 
 .yells {
   color:#ffee36;
@@ -271,20 +217,6 @@ a:hover {
    align-items: flex-end;
 }
 
-.btn-cool {
-  color: #646464;
-  border: 1px solid #999999;
-  padding: 10px 15px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-}
-
-.btn-cool:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: #646464;
-}
 
 
 .text {
@@ -340,6 +272,9 @@ a:hover {
   border-radius: 4px;
   padding: 7px 16px 7px 16px;
   box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
+  }
+  a {
+    background-color: #fff
   }
 }
 
@@ -900,21 +835,5 @@ img {
 
 
 
-
-.btn-cool {
-    /* color: #646464; */
-    /* border: 1px solid #999999; */
-    /* padding: 10px 15px; */
-    /* border-radius: 50px; */
-    /* font-weight: lighter; */
-    color: #333333;
-    opacity: 0.9;
-    border: solid 1px #d4d8e3 !important;
-    border-radius: 4px;
-    padding: 7px 7px 7px 7px;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(85, 95, 110, 0.2) !important;
-    box-shadow: 0 1px 1px 0 rgba(85, 95, 110, 0.2) !important;
-    background-color: white;
-}
 
 
