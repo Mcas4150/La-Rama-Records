@@ -42,7 +42,7 @@
 
 body {
 
-  background-color: #F0F0F0;
+  background-color: ghostwhite;
 }
 
 #main-wrapper {
@@ -747,12 +747,12 @@ img {
   .video {
     position: relative;
     height: 325px;
-    width: 325px;
+    width: 100%;
 }
 
   .video__youtube {
     padding-bottom: 100%;
-    width: 325px;
+    width: 100%;
     height: 325px;
     overflow: hidden;
     position: relative;
@@ -770,7 +770,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 325px;
+    width: 100%;
     height: 325px;
 }
 
