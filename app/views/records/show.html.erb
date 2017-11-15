@@ -33,7 +33,7 @@
         <div class="row centers">
           <div class="col-xs-6 money"> <%= humanized_money_with_symbol(@record.price_cents) rescue nil %>
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-6 add">
             <%= form_tag crate_records_path do %>
               <%= hidden_field_tag 'record_id', @record.id rescue nil%>
               <%= hidden_field_tag 'cart', true %>
