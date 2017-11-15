@@ -1,6 +1,7 @@
 .tracks{
   padding: 0px;
   padding-bottom: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,7 @@
 
 
 .tracktable{
-  margin-top:21px;
+  margin-top:10px;
   width: 100%;
   word-wrap:break-word;
   table-layout: fixed;

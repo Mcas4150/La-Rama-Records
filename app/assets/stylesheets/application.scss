@@ -14,6 +14,7 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/show";
+@import "pages/records_list";
 @import "bootstrap-datepicker";
 @import "youtube";
 @import "algolia";
@@ -28,8 +29,6 @@
   transform-origin: 10% 10%;
   animation: jump 1s linear alternate infinite;
 }
-
-
 
 
 
@@ -91,30 +90,6 @@ padding-right: 10px;
 
 
 
-
-
-.centered{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-
-
-
- .filterrow{
-
-display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-
-.leftpad{
-  padding-left:0px;
-}
 // TABLES
 
 
@@ -160,7 +135,6 @@ td {
 
 
 
-
 // TEXT
 h1 {
   font-size: 1.5em;
@@ -191,12 +165,6 @@ a:hover {
   color: #e9eae7 !important;
 }
 
-
-
-
-.dark{
-  color:#626262;
-}
 
 .type {
   font-size: 1.2em;
@@ -234,11 +202,6 @@ a:hover {
 
 
 
-
-
-
-
-
 .spin{
   border-radius: 50%;
   -webkit-transition: -webkit-transform .7s ease-in-out;
@@ -254,32 +217,6 @@ a:hover {
 .tip {
   padding-top: 1vh;
 }
-
-
-
-
-// LINKS
-
-.filter {
-  font-size: 14px;
-  display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-  a,  #temparature_montreal {
-    border: solid 1px #d4d8e3!important;
-  border-radius: 4px;
-  padding: 7px 16px 7px 16px;
-  box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
-  }
-  a {
-    background-color: #fff
-  }
-}
-
-
-
 
 
 // DROPDOWNS
@@ -320,11 +257,6 @@ a:hover {
     display: inline-block;
 }
 
-.filter-drop {
-  display: none;
-  padding: 0px;
-  padding-top: 5px;
-}
 
 .search-drop {
   display:none;
@@ -332,11 +264,6 @@ a:hover {
 
 
 
-.pager {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
 .list-group-item {
     position: relative;
@@ -476,48 +403,6 @@ a:hover {
 
 
 
-.records-display {
-
-  border-radius: 5px;
-  padding-top: 1em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left:-5px;
-    margin-right:-5px;
-  .card {
-
-    margin: 0px;
-
-    padding: 0px;
-    min-height: 250px;
-    max-width: 250px;
-    background-size: cover;
-    background-image: "https://static.pexels.com/photos/242236/pexels-photo-242236.jpeg";
-      overflow: hidden;
-  text-overflow: ellipsis;
-  }
-  a, a p, a h2 {
-    &:hover {
-      text-decoration: none;
-      width:110%;
-      height:110;
-    }
-  }
-  p {
-    font-weight: bold;
-    color: #646464;
-    font-size: 0.5em;
-    margin-bottom: 0em;
-  }
-  h2 {
-    font-style: italic;
-    color: #626262;
-    font-size: 0.5em;
-    margin: 0 0 1.0em 0;
-  }
-}
 
 
 .seletak {
@@ -637,9 +522,6 @@ a:hover {
 
 
 
-
-
-
 // IMG
 /* Style the Image Used to Trigger the Modal */
 img {
@@ -704,15 +586,12 @@ img {
 }
 
 
-
 .snapwidget-widget{
   border-radius: 3px;
   overflow:hidden;
   width:100%;
   height:300px;
 }
-
-
 
 
 
@@ -788,29 +667,6 @@ img {
 }
 
 
-
-
-.scroll-left {
- height: 50px;
- overflow: hidden;
- position: relative;
-}
-.scroll-left p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);
- transform:translateX(100%);
- /* Apply animation to this element */
- -moz-animation: scroll-left 10s linear infinite;
- -webkit-animation: scroll-left 10s linear infinite;
- animation: scroll-left 10s linear infinite;
-}
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
  0%   { -moz-transform: translateX(100%); }
@@ -832,8 +688,3 @@ img {
  transform: translateX(-100%);
  }
 }
-
-
-
-
-
