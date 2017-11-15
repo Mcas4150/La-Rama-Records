@@ -580,6 +580,7 @@ a:hover {
 
 
 .infoo {
+  padding-top: 5px;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -594,7 +595,9 @@ a:hover {
   padding-bottom: 5px;
 }
 
-
+.pages {
+  padding:0px;
+}
 
 
 
@@ -605,7 +608,9 @@ a:hover {
 
 
 
-
+.records-display p {
+      line-height: 1em;
+}
 
 .recom {
   width:100%;
