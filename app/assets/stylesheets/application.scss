@@ -669,40 +669,77 @@ img {
   //     height: 325px;
   // }
 
-    .description {
-      text-align: center;
-      padding: 0px;
-      justify-content: center;
-      align-items: center;
-      }
 
-    .description > h1 {
-    font-size: 1.5em;
-    }
-
-      .description > p {
-    font-size: 1em;
-  }
-
-
-    .tracks{
-      border-left: none;
-      height: auto;
-    }
 
     #prices{
     padding: 0px 10px;
   }
 
 
-  tr{
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:401px) and (max-width:767px){
+
+  .zoomrecord{
+    width:33%;
+  }
+
+  .description{
+    width:33%;
+        height: 27vw;
+  }
+
+  .tracks{
+    width:33%;
+        height: 27vw;
+  }
+
+  .video__youtube {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    height: 27vw;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+    .description > h1 {
+    font-size: 2vw;
+    }
+
+      .description > p {
+    font-size: 1.8vw;
+    letter-spacing: -.2px;
+  }
+
+   tr{
         display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-    font-size: 1em;
+    font-size: 1.8vw;
   }
-}
 
+  .money{
+    font-size: 3vw;
+  }
+
+  .btn {
+
+    padding: 6px 12px;
+    font-size: 2vw;
+    }
+
+}
 
 @media (max-width: 400px){
 .seletak {
@@ -732,6 +769,35 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+  .description {
+      text-align: center;
+      padding: 0px;
+      justify-content: center;
+      align-items: center;
+      }
+
+    .description > h1 {
+    font-size: 1.5em;
+    }
+
+      .description > p {
+    font-size: 1em;
+  }
+
+
+    .tracks{
+      border-left: none;
+      height: auto;
+    }
+ tr{
+        display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    font-size: 1em;
+  }
+
+
 }
 
 
