@@ -51,6 +51,9 @@ h2 {
 
 .middlenav{
   width: 34.333333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .rightnav{

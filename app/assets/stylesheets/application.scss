@@ -578,6 +578,15 @@ img {
   }
 }
 
+@media (max-width: 950px){
+.menus {
+    margin-left: 0px;
+    margin-right: 0px;
+        font-size: 23px;
+}
+}
+
+
 @media (max-width: 900px){
 .seletak {
     position: relative;
