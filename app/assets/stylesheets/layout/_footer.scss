@@ -2,7 +2,7 @@
 
 .sociallogo {
 
-  display: flex
+  display: flex;
 }
 
 
@@ -11,6 +11,19 @@
   width:100%;
 }
 
+.leftfoot{
+  font-size: .8em;
+  display:flex;
+  justify-content: flex-start;
+  align-self:center;
+  padding-left:0px;
+  color:#292c2f;
+}
+
+.rightfoot{
+  display:flex;
+  justify-content: flex-end;
+}
 
 footer .fa {
   display: flex;
@@ -80,4 +93,9 @@ footer .fa {
   justify-content: center;
   font-size:1.6em ;
   font-family:'Damion', 'cursive';
+}
+
+#discogs{
+  width: 50px;
+  height: 50px;
 }

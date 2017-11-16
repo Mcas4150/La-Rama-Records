@@ -16,10 +16,10 @@
   font-size: 1.5em;
 }
 
-.navpad{
-  background-color: #292c2f;
-  width:100%;
-}
+
+
+
+
 /* Optional class to fix the navbar on top */
 .navbar-wagon-fixed {
   position: fixed;
@@ -27,7 +27,7 @@
   top: 0px;
   z-index: 1;
   width: 100%;
-  height: 5vh;
+  height: 50px;
 }
 
 h2 {
@@ -44,9 +44,26 @@ h2 {
 }
 
 
-.rightside{
-  padding-right:25px;
+.leftnav{
+  padding-left: 10px;
 }
+
+
+.middlenav{
+  width: 34.333333%;
+}
+
+.rightnav{
+  padding-right:10px;
+}
+
+
+.barr{
+  text-align: Center;
+  background-color: #292c2f;
+  color: #e9eae7;
+}
+
 
 .hamburger{
   padding:0px;
@@ -54,15 +71,15 @@ h2 {
 }
 /* Navbar logo */
 .navbar-wagon-brand img {
-  height:7vh;
-  padding-left:10px;
+  height:50px;
+  width:150px;
 }
 
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Navbar item */

@@ -1,63 +1,62 @@
-  <div class= "navpad" >
-<div class="navbar-wagon navbar-wagon-fixed">
-
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "Ramafull.jpg" %>
-  <% end %>
-
-  <!-- Right Navigation -->
-  <div class= "text-center hidden-xs" style="color: #e9eae7">
-
-  <h2>
-  <!--   <a class="menus" href="/pages/home">Catalog</a> -->
-    <a class="menus" href="/pages/gear">Gear</a>
-    <a class="menus" href="https://www.facebook.com/pg/laramarecords/events/?ref=page_internal">Events</a>
-
-    <a class="menus" href="/pages/aboutus">About</a></h2>
-
-
-  </div>
-
-  <div class="rightside">
-    <div class="navbar-wagon-right">
-
-
-    <div class="navbar-wagon-item navbar-wagon-link">
-          <div class="badge-container">
-            <i class="fa topbadge fa-search"></i>
-            <i class="fa topbadge fa-shopping-cart hidden-xs"></i>
-            <div class="badge badge-blue"></div>
-          </div>
-    </div>
-      <% if user_signed_in? %>
-
-        <!-- Profile picture and dropdown -->
-
-        <!-- Login text link -->
-        <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+ <div class="navbar-wagon navbar-wagon-fixed">
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 leftnav">
+      <!-- Logo -->
+      <%= link_to root_path, class: "navbar-wagon-brand" do %>
+        <%= image_tag "Ramafull.jpg" %>
       <% end %>
     </div>
-  </div>
 
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg hamburger" style="padding:0px;
-  padding-right:10px;">
-    <div class="dropdown2">
-       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu barr" style="text-align: Center; background-color: #292c2f; color: #e9eae7">
-        <li><a href="">Arrivals</a></li>
-        <li><a href="https://www.facebook.com/pg/laramarecords/events/?ref=page_internal" >Events</a></li>
-        <li><a href="">Catalog</a></li>
-        <li><a href="/pages/gear">Gear</a></li>
-        <li><a href="/pages/aboutus">About</a></li>
-        <li><a href="/records/crate">Cart </a></li>
-      </ul>
+    <div class="hidden-xs middlenav">
+      <!-- Middle Navigation -->
+      <div class= "text-center hidden-xs" style="color: #e9eae7">
+        <h2>
+        <!--   <a class="menus" href="/pages/home">Catalog</a> -->
+          <a class="menus" href="/pages/gear">Gear</a>
+          <a class="menus" href="https://www.facebook.com/pg/laramarecords/events/?ref=page_internal">Events</a>
+
+          <a class="menus" href="/pages/aboutus">About</a>
+        </h2>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="searchbar">
-  <input type="text" id="q" class="form-control" />
-</div>
-</div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 rightnav">
+        <div class="navbar-wagon-right">
+          <div class="navbar-wagon-item navbar-wagon-link">
+            <div class="badge-container">
+              <i class="fa topbadge fa-search"></i>
+              <i class="fa topbadge fa-shopping-cart hidden-xs"></i>
+              <div class="badge badge-blue"></div>
+            </div>
+          </div>
+          <% if user_signed_in? %>
+            <!-- Profile picture and dropdown -->
+            <!-- Login text link -->
+            <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <% end %>
+          <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg hamburger">
+            <div class="dropdown2">
+              <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu barr">
+                <li><a href="">Arrivals</a></li>
+                <li><a href="https://www.facebook.com/pg/laramarecords/events/?ref=page_internal" >Events</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="/pages/gear">Gear</a></li>
+                <li><a href="/pages/aboutus">About</a></li>
+                <li><a href="/records/crate">Cart </a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+      </div>
+      <!-- Dropdown list appearing on mobile only -->
+
+    </div>
+
+  </div>
+
+  <div class="searchbar">
+    <input type="text" id="q" class="form-control" />
+  </div>
