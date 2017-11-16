@@ -546,12 +546,12 @@ img {
 
 
 
+@media (max-width: 1400px){
 
-
-
-
-
-
+ .list-group-item{
+    width:20%;
+  }
+}
 
 
 
@@ -565,6 +565,9 @@ img {
   .ais-hits--item > .col-md-3{
     width: 20%;
   }
+
+
+
 }
 
 
