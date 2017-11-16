@@ -142,7 +142,7 @@ search.addWidget(
           dataType: "jsonp",
           success: function(data) {
           //console.log( data.minutely.summary); // server response
-          $('#temparature_montreal').html("MTL: " + data.currently.temperature.toFixed() + "°");
+          $('#temparature_montreal').html("MTL:" + data.currently.temperature.toFixed() + "°");
               }
           });
 
