@@ -5,8 +5,7 @@ width: 100%;
 height:350px;
 }
 .video {
-    position: relative;
-    height: 350px;
+    max-height: 350px;
 }
 
 .video__iframe {
@@ -18,15 +17,16 @@ height:350px;
 }
 
 .video__placeholder {
-  width: 100%;
-    position: absolute;
-    height: 350px;
+    max-width: 100%;
+    position: relative;
+    max-height: 350px;
 }
 
+
 .video__youtube {
-    padding-bottom: 100%;
+    display: block;
     width: 100%;
-    height: 350px;
+    max-height: 350px;
     overflow: hidden;
   position: relative;
     object-fit: cover;

@@ -52,7 +52,7 @@ $(document).ready(function() {
     var search = instantsearch({
       appId: 'P1B024U2Z9',
       apiKey: 'e2a4822bc15df22e7b8ca22cca51b784',
-      indexName: 'Record_production',
+      indexName: 'Record_development',
       urlSync: true
     });
 
@@ -86,6 +86,20 @@ $(document).ready(function() {
   })
 );
 
+    //      search.addWidget(
+    //   instantsearch.widgets.numericSelector({
+    //     container: '#popularity-selector',
+    //     attributeName: 'popularity',
+    //     operator: '>=',
+    //     options: [
+    //       {label: 'Top 10', value: 9900},
+    //       {label: 'Top 100', value: 9800},
+    //       {label: 'Top 500', value: 9700}
+    //     ]
+    //   })
+    // );
+
+
     search.addWidget(
       instantsearch.widgets.pagination({
           container: '#pagination',
@@ -93,18 +107,18 @@ $(document).ready(function() {
           })
         );
 
-search.addWidget(
-  instantsearch.widgets.rangeSlider({
-    container: '#prices',
-    attributeName: 'price_cents',
-    pips: false,
-    tooltips: {
-      format: function(rawValue) {
-        return '$' + Math.round(rawValue).toLocaleString();
+  search.addWidget(
+    instantsearch.widgets.rangeSlider({
+      container: '#prices',
+      attributeName: 'price_cents',
+      pips: false,
+      tooltips: {
+        format: function(rawValue) {
+          return '$' + Math.round(rawValue).toLocaleString();
+        }
       }
-    }
-  })
-);
+    })
+  );
 
 
     search.addWidget(
