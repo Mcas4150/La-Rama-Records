@@ -18,14 +18,20 @@
   flex-direction: column;
 }
 
+
+
+
+
 .description > p {
-  font-size: 1.2em;
+  font-size: 1.5vw;
+    letter-spacing: -.2px;
 }
 
 .description > h1 {
   margin-top: 15px;
   padding-top: 5px;
   margin-bottom: 5px;
+      font-size: 1.9vw;
 }
 
 .centers{
@@ -111,7 +117,7 @@ tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-   font-size:1em;
+   font-size:1.5vw;
 }
 
 table {

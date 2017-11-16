@@ -73,6 +73,12 @@ display: flex;
   box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
 }
 
+#pager {   display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0px;
+  }
+
 
 .pager {
     display: flex;

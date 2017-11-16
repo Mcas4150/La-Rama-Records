@@ -456,11 +456,7 @@ a:hover {
 }
 
 
-#pager {   display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 0px;
-  }
+
 
  #map {
   height:300px;
@@ -545,31 +541,45 @@ img {
   height:300px;
 }
 
-@media (min-width: 992px){
-.container {
-    width: auto;
-}
-}
 
-@media (min-width: 768px){
-.container {
-    width: auto;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1199px){
-.seletak {
-    position: relative;
-    height: 14vw;
-    width: 14vw;
-}
-.ais-hits--item > .col-md-3{
-  width: 20%;
-}
+  .seletak {
+      position: relative;
+      height: 14vw;
+      width: 14vw;
+  }
+  .ais-hits--item > .col-md-3{
+    width: 20%;
+  }
+
+
 
 
 }
+
+
+
+@media (min-width: 992px){
+  .container {
+      width: auto;
+  }
+}
+
+
 
 
 @media (max-width: 900px){
@@ -577,13 +587,23 @@ img {
     position: relative;
     height: 17vw;
     width: 17vw;
-}
+  }
 .ais-hits--item > .col-md-3{
   width: 25%;
+  }
 }
 
 
+
+
+
+
+@media (min-width: 768px){
+  .container {
+      width: auto;
+  }
 }
+
 
 
 
@@ -592,74 +612,12 @@ img {
     position: relative;
     height: 27vw;
     width: 27vw;
-}
+  }
 .ais-hits--item > .col-md-3{
   width: 33.333%;
-}
+  }
 
-
-}
-
-
-@media (max-width: 400px){
-.seletak {
-    position: relative;
-    height: 38vw;
-    width: 38vw;
-}
-.ais-hits--item > .col-md-3{
-  width: 50%;
-}
-
-
-}
-
-
-// @media (min-width: 778px) and (max-width: 991px){
-// .container {
-//     width: auto;
-// }
-
-//   .video {
-//     position: relative;
-//     height: 325px;
-//     width: 100%;
-// }
-
-//   .video__youtube {
-//     padding-bottom: 100%;
-//     width: 100%;
-//     height: 325px;
-//     overflow: hidden;
-//     position: relative;
-//     -o-object-fit: cover;
-//     object-fit: cover;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-// }
-
-//   .video__placeholder {
-//     max-width: 100%;
-//     position: absolute;
-//     max-height: 100%;
-
-// }
-//     .video__iframe {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 325px;
-// }
-
-
-
-// }
-
-
-@media screen and (max-width: 778px) {
-    .modal-content {
+   .modal-content {
         width: 100%;
     }
     .main{
@@ -686,59 +644,82 @@ img {
     position: relative;
     height: 325px;
     width: 100%;
-}
-
-  .video__youtube {
-    padding-bottom: 100%;
-    width: 100%;
-    height: 325px;
-    overflow: hidden;
-    position: relative;
-    -o-object-fit: cover;
-    object-fit: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-  .video__placeholder {
-    width: 100%;
-    position: absolute;
-    height: 325px;
-    width: 325px;
-}
-    .video__iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 325px;
-}
-
-  .description {
-    text-align: center;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .description > p {
-  font-size: 1em;
-}
-
-  .tracks{
-    border-left: none;
-    height: auto;
   }
 
-  #prices{
-  padding: 0px 10px;
+    .video__youtube {
+      padding-bottom: 100%;
+      width: 100%;
+      height: 325px;
+      overflow: hidden;
+      position: relative;
+      -o-object-fit: cover;
+      object-fit: cover;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+    .video__placeholder {
+      width: 100%;
+      position: absolute;
+      height: 325px;
+      width: 325px;
+  }
+      .video__iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 325px;
+  }
+
+    .description {
+      text-align: center;
+      padding: 0px;
+      justify-content: center;
+      align-items: center;
+      }
+
+    .description > h1 {
+    font-size: 1.5em;
+    }
+
+      .description > p {
+    font-size: 1em;
+  }
+
+
+    .tracks{
+      border-left: none;
+      height: auto;
+    }
+
+    #prices{
+    padding: 0px 10px;
+  }
+
+
+  tr{
+        display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    font-size: 1em;
+  }
 }
 
 
-
-
+@media (max-width: 400px){
+.seletak {
+    position: relative;
+    height: 38vw;
+    width: 38vw;
+  }
+.ais-hits--item > .col-md-3{
+  width: 50%;
+  }
 }
+
+
 
 
 /* Move it (define the animation) */
