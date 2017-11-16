@@ -557,6 +557,64 @@ img {
 }
 }
 
+
+@media (max-width: 1199px){
+.seletak {
+    position: relative;
+    height: 14vw;
+    width: 14vw;
+}
+.ais-hits--item > .col-md-3{
+  width: 20%;
+}
+
+
+}
+
+
+@media (max-width: 900px){
+.seletak {
+    position: relative;
+    height: 17vw;
+    width: 17vw;
+}
+.ais-hits--item > .col-md-3{
+  width: 25%;
+}
+
+
+}
+
+
+
+@media (max-width: 768px){
+.seletak {
+    position: relative;
+    height: 27vw;
+    width: 27vw;
+}
+.ais-hits--item > .col-md-3{
+  width: 33.333%;
+}
+
+
+}
+
+
+@media (max-width: 400px){
+.seletak {
+    position: relative;
+    height: 38vw;
+    width: 38vw;
+}
+.ais-hits--item > .col-md-3{
+  width: 50%;
+}
+
+
+}
+
+
 // @media (min-width: 778px) and (max-width: 991px){
 // .container {
 //     width: auto;
@@ -612,10 +670,6 @@ img {
     .categories {
       width: 100%;
       height: 30vh;
-    }
-    .seletak {
-      width: 150px;
-      height: 150px;
     }
 
     .zoomrecord{
