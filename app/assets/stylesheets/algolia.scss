@@ -375,3 +375,32 @@ label {
     margin-bottom: 5px;
     font-weight: normal;
 }
+
+
+.ais-range-slider .rheostat {
+    overflow: visible;
+    margin-top: .9em;
+    margin-bottom: .9em;
+        margin-left: 10px;
+    margin-right: 20px;
+}
+
+.ais-range-slider .rheostat-horizontal .rheostat-handle {
+    margin-left: 0px;
+    margin-right: 0px;
+    top: -7px;
+}
+
+.ais-range-slider--tooltip {
+    position: absolute;
+    background-color: transparent;
+    top: -3px;
+    left: -16px;
+    font-size: 0.8em;
+}
+
+.ais-range-slider .rheostat-horizontal .rheostat-handle .ais-range-slider--tooltip {
+    text-align: center;
+    margin-left: -22px;
+    width: 40px;
+}
