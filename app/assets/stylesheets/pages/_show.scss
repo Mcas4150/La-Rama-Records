@@ -168,8 +168,48 @@ td {
 
 
 
-@media (max-width: 400px){
 
+
+
+
+
+
+
+
+
+@media (min-width:401px) and (max-width:767px){
+
+ .description > h1 {
+    font-size: 2vw;
+    }
+
+      .description > p {
+    font-size: 1.8vw;
+    letter-spacing: -.2px;
+  }
+
+   tr{
+        display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    font-size: 1.8vw;
+  }
+
+  .money{
+    font-size: 3vw;
+  }
+
+  .btn {
+
+    padding: 6px 12px;
+    font-size: 2vw;
+    }
+
+
+}
+
+
+@media (max-width: 400px){
 
  .description {
       text-align: center;
@@ -185,9 +225,6 @@ td {
       .description > p {
     font-size: 1em;
   }
-
-
-
     .tracks{
       border-left: none;
       height: auto;
