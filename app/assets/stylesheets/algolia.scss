@@ -62,7 +62,7 @@
 
 .searchbar{
     display: none;
-    position: relative;
+    position: fixed;
     left: 0px;
     padding: 30px;
     top: 5vh;
@@ -73,7 +73,7 @@
 
 .ais-search-box {
 
- position: relative;
+ position: fixed;
  max-width: 100%;
  width: 100%;
  }
@@ -85,7 +85,7 @@
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 120%;
     height: 36px;
     padding: 6px 12px;
     font-size: 16px;
