@@ -364,7 +364,7 @@ input[type="radio"], input[type="checkbox"] {
     display: inline-block;
     margin-bottom: 0px;
     padding: 5px 10px;
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     width: 14%;
 }
@@ -405,4 +405,34 @@ label {
     text-align: center;
     margin-left: -22px;
     width: 40px;
+}
+
+
+// select.ais-hits-per-page-selector, select.ais-menu-select--select, select.ais-numeric-selector, select.ais-sort-by-selector {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     background: #292c2f url(data:image/svg+xml;utf8,<svg viewBox='0 0 12 7' xmlns='http://www.w3.org/20…'%23BFC7D8 fill='none' fill-rule='evenodd' stroke-linecap='round'/></svg>) no-repeat center right 16px/10px;
+//     -webkit-box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
+//     box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
+//     border: solid 1px #d4d8e3!important;
+//     border-radius: 4px;
+//     color: #697782;
+//     font-size: 12px;
+//     -webkit-transition: background .2s ease,-webkit-box-shadow .2s ease;
+//     transition: background .2s ease,box-shadow .2s ease;
+//     transition: background .2s ease,box-shadow .2s ease,-webkit-box-shadow .2s ease;
+//     padding: 8px 32px 8px 16px;
+//     outline: 0;
+// }
+
+
+.ais-current-refined-values--link, .ais-hierarchical-menu--link, .ais-menu--link, .ais-price-ranges--link, .ais-refinement-list--label, .ais-star-rating--link, .ais-toggle--label {
+    color: #292c2f;
+    text-decoration: none;
+}
+
+select.ais-hits-per-page-selector{
+  background-color: #292c2f;
+  color: #e9eae7;
 }
