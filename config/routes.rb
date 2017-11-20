@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
 
-  get 'cart_items/create'
 
   mount Payola::Engine => '/payola', as: :payola
   # get 'rec/:id' => 'tests#show', :constraints  => {:id => /.+\.\w{3,4}/}
