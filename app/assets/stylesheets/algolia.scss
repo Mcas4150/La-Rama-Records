@@ -428,11 +428,29 @@ label {
 
 
 .ais-current-refined-values--link, .ais-hierarchical-menu--link, .ais-menu--link, .ais-price-ranges--link, .ais-refinement-list--label, .ais-star-rating--link, .ais-toggle--label {
-    color: #292c2f;
+    color: #e9eae7;
     text-decoration: none;
 }
 
 select.ais-hits-per-page-selector{
   background-color: #292c2f;
+  opacity: .8;
   color: #e9eae7;
 }
+
+select.ais-hits-per-page-selector:hover {
+    background-color: #292c2f;
+    opacity: 1;
+    color: #ffea36;
+    text-decoration: none;
+}
+
+
+
+.badge{
+  background-color: transparent;
+}
+
+.ais-pagination {
+    background: #e9eae7;
+  }

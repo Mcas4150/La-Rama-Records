@@ -34,8 +34,15 @@ display: flex;
   box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
   }
   a {
-    background-color: #292c2f
+    background-color: #292c2f;
+    opacity: .8;
   }
+  a:hover {
+    background-color: #292c2f;
+    opacity: 1;
+    color: #ffea36;
+    text-decoration: none;
+}
 }
 
 .filter-drop {
@@ -48,6 +55,7 @@ display: flex;
 #temparature_montreal {
   display: inline-block;
   background-color: #292c2f;
+  opacity: .8;
     border: solid 1px #d4d8e3!important;
   border-radius: 4px;
   padding: 7px 16px 7px 16px;
@@ -68,10 +76,25 @@ display: flex;
   cursor: pointer;
     display: inline-block;
   background-color: #292c2f;
+    opacity:.8;
     border: solid 1px #d4d8e3!important;
   border-radius: 4px;
   padding: 7px 16px 7px 16px;
   box-shadow: 0 1px 1px 0 rgba(85,95,110,.2)!important;
+   a {
+    background-color: #292c2f;
+  }
+  a:hover {
+    background-color: #292c2f;
+    opacity: 1;
+    color: #ffea36;
+    text-decoration: none;
+}
+}
+
+#price:hover{
+  background-color: #292c2f;
+    color: #e9eae7;
 }
 
 .priceslide{
@@ -85,7 +108,8 @@ display: flex;
 
 #sort{
   display: inline-block;
-  background-color: #fff;
+  background-color: #292c2f;
+  opacity: .8;
     border: solid 1px #d4d8e3!important;
   border-radius: 4px;
   padding: 7px 16px 7px 16px;
@@ -106,10 +130,16 @@ display: flex;
 }
 
 
-
+.deep{
+  background-color:#292c2f;
+}
 
 .dark{
   color:#e9eae7;
+  a:hover{
+    background-color: #e9eae7;
+    color: #292c2f;
+  }
 }
 
 .records-display {
