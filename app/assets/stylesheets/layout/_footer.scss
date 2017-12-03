@@ -1,5 +1,10 @@
 // Your footer style
 
+footer{
+  border-top: 3px solid white;
+}
+
+
 .sociallogo {
 
   display: flex;
@@ -7,6 +12,7 @@
 
 
 .footpad{
+  background-image: url('retina_wood.png');
  background-color: white;
   width:100%;
 }
@@ -38,7 +44,6 @@ footer .fa {
 .footer-basic-centered{
   display: flex;
   justify-content: space-between;
-  background-color: white;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
